@@ -14,6 +14,7 @@
 		62DD2E771D9D96C600F68D74 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2E761D9D96C600F68D74 /* Images.xcassets */; };
 		62DD2E7A1D9D96C600F68D74 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 62DD2E781D9D96C600F68D74 /* LaunchScreen.xib */; };
 		62DD2E861D9D96C600F68D74 /* NavegacionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DD2E851D9D96C600F68D74 /* NavegacionTests.swift */; };
+		62DD2E901D9D96DC00F68D74 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62DD2E8F1D9D96DC00F68D74 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		62DD2E7F1D9D96C600F68D74 /* NavegacionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavegacionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62DD2E841D9D96C600F68D74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62DD2E851D9D96C600F68D74 /* NavegacionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavegacionTests.swift; sourceTree = "<group>"; };
+		62DD2E8F1D9D96DC00F68D74 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62DD2E901D9D96DC00F68D74 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +64,7 @@
 		62DD2E5E1D9D96C600F68D74 = {
 			isa = PBXGroup;
 			children = (
+				62DD2E8F1D9D96DC00F68D74 /* MapKit.framework */,
 				62DD2E691D9D96C600F68D74 /* Navegacion */,
 				62DD2E821D9D96C600F68D74 /* NavegacionTests */,
 				62DD2E681D9D96C600F68D74 /* Products */,
@@ -164,6 +168,11 @@
 				TargetAttributes = {
 					62DD2E661D9D96C600F68D74 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					62DD2E7E1D9D96C600F68D74 = {
 						CreatedOnToolsVersion = 6.3.2;
